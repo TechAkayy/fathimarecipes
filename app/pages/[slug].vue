@@ -61,7 +61,11 @@
         <h1 class="font-serif text-4xl md:text-5xl text-primary-800 mb-4">
           {{ title }}
         </h1>
-        <p v-html="recipe.content" />
+        <div
+          class="p-10 dark:prose-invert dark:prose-gray-100 flex flex-col heading-offset max-w-none prose prose-gray-800 rounded-lg"
+        >
+          <div v-html="recipe.content" />
+        </div>
 
         <div class="flex flex-wrap gap-2 mt-8">
           <span
