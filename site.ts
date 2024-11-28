@@ -7,8 +7,8 @@ export default {
   description: 'Vue Designer Nuxt Tailwind CSS - Quick start template',
   logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
-  url: 'https://fathima-recipes.netlify.app',
-  github: 'https://github.com/techakayy/fathima-recipes',
+  url: 'https://fathimarecipes.netlify.app',
+  github: 'https://github.com/techakayy/fathimarecipes',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',

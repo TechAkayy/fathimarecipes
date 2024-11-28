@@ -1,16 +1,16 @@
 {
-  "name": "fathima-recipes",
+  "name": "fathimarecipes",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://fathima-recipes.netlify.app",
+  "homepage": "https://fathimarecipes.netlify.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/techakayy/fathima-recipes.git"
+    "url": "https://github.com/techakayy/fathimarecipes.git"
   },
   "scripts": {
     "dev": "nuxt dev",
     "now": "npm run build && npm run preview",
-    "lighthouse": "npx unlighthouse --no-cache --site https://fathima-recipes.netlify.app",
+    "lighthouse": "npx unlighthouse --no-cache --site https://fathimarecipes.netlify.app",
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

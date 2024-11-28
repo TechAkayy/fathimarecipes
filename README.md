@@ -2,7 +2,7 @@
 
 This is a starter template that pre-includes the [Pinegrow Nuxt Module](https://www.npmjs.com/package/@pinegrow/nuxt-module), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
 
-Demo - https://fathima-recipes.netlify.app/
+Demo - https://fathimarecipes.netlify.app/
 
 ## Vue Designer
 
@@ -18,14 +18,14 @@ Clean code 😃, No lock-in - You are in control of your projects and developmen
 
 ### 1. Clone to local
 
-[Create a repo from this template on GitHub](https://github.com/techakayy/fathima-recipes/generate).
+[Create a repo from this template on GitHub](https://github.com/techakayy/fathimarecipes/generate).
 
 (or)
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx giget@latest gh:techakayy/fathima-recipes my-nuxt-tailwindcss-app #project-name
+npx giget@latest gh:techakayy/fathimarecipes my-nuxt-tailwindcss-app #project-name
 cd my-nuxt-tailwindcss-app
 npm install #or use pnpm
 ```
@@ -35,7 +35,7 @@ npm install #or use pnpm
 If you prefer a minimal template (a single empty home page) instead,
 
 ```bash
-npx giget@latest gh:techakayy/fathima-recipes#minimal my-nuxt-tailwindcss-app #project-name
+npx giget@latest gh:techakayy/fathimarecipes#minimal my-nuxt-tailwindcss-app #project-name
 cd my-nuxt-tailwindcss-app
 npm install #or use pnpm
 ```
@@ -80,7 +80,7 @@ npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to r
 ### Deploy to Netlify
 
 You can deploy this repo as a site on your own to explore and experiment with, by clicking this button.
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/techakayy/fathima-recipes)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/techakayy/fathimarecipes)
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
