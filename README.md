@@ -2,7 +2,7 @@
 
 This is a starter template that pre-includes the [Pinegrow Nuxt Module](https://www.npmjs.com/package/@pinegrow/nuxt-module), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
 
-Demo - https://fathimarecipes.netlify.app/
+Demo - https://fathimarecipes.com/
 
 ## Vue Designer
 
