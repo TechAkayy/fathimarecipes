@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  const { recipes: posts } = await useRecipes()
+  const { recipes } = await useRecipes()
 </script>
 
 <template>
@@ -12,24 +12,27 @@
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <NuxtLink
-          v-for="(node, index) in posts"
+          v-for="(recipe, index) in recipes"
           :key="index"
           class="bg-white rounded-lg overflow-hidden shadow-lg"
-          :to="node.uri"
+          :to="recipe.uri"
         >
           <img
-            alt="Traditional Tamil Cooking Methods"
+            :alt="recipe.featuredImage?.node?.alt || 'Recipe Image'"
             class="w-full h-64 object-cover"
-            :src="node.featuredImage.node.sourceUrl"
+            :src="
+              recipe.featuredImage?.node?.sourceUrl ||
+              'https://placehold.co/600x400'
+            "
           />
           <div class="p-6">
             <div class="text-secondary-600 text-sm mb-2">
-              {{ new Date(node.date).toDateString() }}
+              {{ new Date(recipe.date).toDateString() }}
             </div>
             <h3 class="font-serif text-xl text-primary-900 mb-3">
-              {{ node.title }}
+              {{ recipe.title }}
             </h3>
-            <div class="text-gray-600 mb-4" v-html="node.excerpt" />
+            <div class="text-gray-600 mb-4" v-html="recipe.excerpt" />
             <span class="text-primary-600 hover:text-primary-700 font-sans"
               >Read More →</span
             >

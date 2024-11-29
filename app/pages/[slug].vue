@@ -43,9 +43,12 @@
     <article class="max-w-4xl mx-auto px-4 py-12">
       <div class="mb-8">
         <img
-          alt="Traditional Tamil Cooking"
-          class="w-full h-[400px] object-cover rounded-lg shadow-lg"
-          :src="recipe.featuredImage.node.sourceUrl"
+          :alt="recipe.featuredImage?.node?.alt || 'Recipe Image'"
+          class="w-full h-64 object-cover"
+          :src="
+            recipe.featuredImage?.node?.sourceUrl ||
+            'https://placehold.co/600x400'
+          "
         />
       </div>
 
