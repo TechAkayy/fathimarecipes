@@ -225,7 +225,12 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/hidden': { robots: false },
+    '/admin': {
+      robots: false,
+      redirect: {
+        to: 'https://admin.fathimarecipes.com/wp-admin/',
+      },
+    },
   },
 
   // Used by all modules in the @nuxtjs/seo collection
@@ -248,6 +253,7 @@ export default defineNuxtConfig({
   sitemap: {
     // https://nuxtseo.com/sitemap/guides/i18n#debugging-hreflang
     // Open {{site.url}}/sitemap.xml
+    exclude: ['/admin'],
     xslColumns: [
       { label: 'URL', width: '50%' },
       { label: 'Last Modified', select: 'sitemap:lastmod', width: '12.5%' },
