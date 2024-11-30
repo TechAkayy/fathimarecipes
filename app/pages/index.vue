@@ -1,5 +1,8 @@
 <script setup lang="ts">
   import { heroImageUrl } from '@/utils/hero'
+
+  import { usePgData } from '~~/data/pg-wordpress/pg-data.mjs'
+
   const heroCaption = 'Welcome To'
   const heroTitle = 'Vue Designer'
   const heroDescription =
@@ -16,6 +19,7 @@
     icon: 'i-mdi-home',
     // ogImage: 'images/ogImage.png', // url or local images inside public folder, for eg, ~/public/images/ogImage.png
   })
+  const pgData = await usePgData()
 </script>
 <template>
   <div>
@@ -27,14 +31,17 @@
         <p class="text-primary-200 font-serif text-xl md:text-2xl mb-4">
           {{ heroCaption }}
         </p>
-        <h1 class="text-white font-serif text-4xl md:text-6xl lg:text-7xl mb-6">
-          Fathima Recipes
+        <h1
+          class="text-white font-serif text-4xl md:text-6xl lg:text-7xl mb-6"
+          pg-cms-site-name
+        >
+          {{ pgData.siteName }}
         </h1>
         <p
           class="text-white font-sans text-lg md:text-xl max-w-2xl mx-auto mb-8"
+          pg-cms-site-description
         >
-          Discover the authentic flavors of Tamil cuisine, crafted with love and
-          tradition by Fathima Kaja
+          {{ pgData.siteDescription }}
         </p>
         <NuxtLink
           to="#recipes"

@@ -326,6 +326,11 @@ export default defineNuxtConfig({
         // restartOnConfigUpdate: true,
         // restartOnThemeUpdate: true,
       },
+      wordpress: {
+        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+        themePath: false, // Set to false so that Design Panel is not used
+        // dataPath: false, // Set to false to stop auto querying
+      },
       // plugins: [
       //   {
       //     name: 'My Awesome Lib 3.0',

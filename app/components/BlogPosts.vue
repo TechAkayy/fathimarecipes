@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  const { recipes } = await useRecipes()
+  import { usePgData } from '~~/data/pg-wordpress/pg-data.mjs'
+  const pgData = await usePgData()
 </script>
-
 <template>
   <section class="py-16 px-4 sm:px-6 lg:px-8 bg-stone-100">
     <div class="max-w-7xl mx-auto">
@@ -12,27 +12,28 @@
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <NuxtLink
-          v-for="(recipe, index) in recipes"
+          v-for="(post, index) in pgData.posts"
           :key="index"
           class="bg-white rounded-lg overflow-hidden shadow-lg"
-          :to="recipe.uri"
+          :to="post.uri"
+          pg-cms-posts
         >
           <img
-            :alt="recipe.featuredImage?.node?.alt || 'Recipe Image'"
+            :alt="post.featuredImage?.node?.alt || 'Post Image'"
             class="w-full h-64 object-cover"
             :src="
-              recipe.featuredImage?.node?.sourceUrl ||
+              post.featuredImage?.node?.sourceUrl ||
               'https://placehold.co/600x400'
             "
           />
           <div class="p-6">
             <div class="text-secondary-600 text-sm mb-2">
-              {{ new Date(recipe.date).toDateString() }}
+              {{ post.dateDisplay }}
             </div>
             <h3 class="font-serif text-xl text-primary-900 mb-3">
-              {{ recipe.title }}
+              {{ post.title }}
             </h3>
-            <div class="text-gray-600 mb-4" v-html="recipe.excerpt" />
+            <div class="text-gray-600 mb-4" v-html="post.excerpt" />
             <span class="text-primary-600 hover:text-primary-700 font-sans"
               >Read More →</span
             >
@@ -42,5 +43,4 @@
     </div>
   </section>
 </template>
-
 <style scoped></style>

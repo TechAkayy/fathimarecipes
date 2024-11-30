@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  import { usePgData } from '~~/data/pg-wordpress/pg-data.mjs'
+
+  const route = useRoute()
+
   definePageMeta({
     // layout: 'default',
     // name: 'slug',
@@ -22,7 +26,6 @@
   // 	return await getArticle(+articleId)
   // })
 
-  const route = useRoute()
   const capitalize = (s) => (s && s[0].toUpperCase() + s.slice(1)) || ''
   useServerSeoMeta({
     description: () => capitalize(route.params.slug),
@@ -30,56 +33,45 @@
   useHead({
     title: () => capitalize(route.params.slug),
   })
-  const slug = route.params.slug
   const title = capitalize(route.params.slug).replaceAll('-', ' ')
-
-  const { recipes, getRecipe } = await useRecipes()
-
-  const recipe = getRecipe(`${slug}/`)
+  const pgData = await usePgData()
+  const pgPost = pgData.getPost(useRoute().params.slug)
 </script>
-
 <template layout="default">
-  <div v-if="recipe">
+  <div v-if="pgPost" pg-cms-post>
     <article class="max-w-4xl mx-auto px-4 py-12">
       <div class="mb-8">
         <img
-          :alt="recipe.featuredImage?.node?.alt || 'Recipe Image'"
+          :alt="pgPost.featuredImage?.node?.alt || 'Post Image'"
           class="w-full h-64 object-cover"
           :src="
-            recipe.featuredImage?.node?.sourceUrl ||
+            pgPost.featuredImage?.node?.sourceUrl ||
             'https://placehold.co/600x400'
           "
         />
       </div>
-
       <div class="space-y-6">
         <div class="flex items-center gap-4 text-primary-600">
-          <time datetime="2024-01-15">{{
-            new Date(recipe.date).toDateString()
-          }}</time>
-          <span>•</span>
-          <span>Tamil Cuisine</span>
+          <time datetime="2024-01-15"
+            >{{ new Date(pgPost.date).toDateString() }} </time
+          ><span>•</span><span>Tamil Cuisine</span>
         </div>
-
         <h1 class="font-serif text-4xl md:text-5xl text-primary-800 mb-4">
           {{ title }}
         </h1>
         <div
           class="p-10 dark:prose-invert dark:prose-gray-100 flex flex-col heading-offset max-w-none prose prose-gray-800 rounded-lg"
         >
-          <div v-html="recipe.content" />
+          <div v-html="pgPost.content" />
         </div>
-
         <div class="flex flex-wrap gap-2 mt-8">
           <span
             class="px-3 py-1 bg-secondary-100 text-secondary-700 rounded-full"
             >#TamilCuisine</span
-          >
-          <span
+          ><span
             class="px-3 py-1 bg-secondary-100 text-secondary-700 rounded-full"
             >#TraditionalCooking</span
-          >
-          <span
+          ><span
             class="px-3 py-1 bg-secondary-100 text-secondary-700 rounded-full"
             >#CulinaryHeritage</span
           >
@@ -88,5 +80,4 @@
     </article>
   </div>
 </template>
-
 <style scoped></style>
