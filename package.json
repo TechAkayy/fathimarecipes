@@ -38,7 +38,7 @@
     "@nuxtjs/fontaine": "^0.4.3",
     "@nuxtjs/html-validator": "^1.8.2",
     "@nuxtjs/seo": "^2.0.0-rc.19",
-    "@pinegrow/headless-wordpress": "^6.0.1-beta.7",
+    "@pinegrow/headless-wordpress": "^6.0.1-beta.10",
     "@pinegrow/nuxt-module": "^3.0.63",
     "@pinegrow/tailwindcss-plugin": "^3.0.33",
     "@resvg/resvg-js": "^2.5.0",

@@ -214,13 +214,10 @@ const pg_colors = {
   },
 }
 
-const pg_fonts = {
-  sans: ["'Overlock', sans-serif"],
-  serif: ["'Ubuntu', sans-serif"],
-}
+const pg_fonts = { sans: ["'Sora', sans-serif"], serif: ['kalam'] }
 
 const pg_font_urls = [
-  'https://fonts.googleapis.com/css?family=Overlock:400,700,900|Ubuntu:300,400,500,700&display=swap',
+  'https://fonts.googleapis.com/css?family=Sora:100,200,300,400,500,600,700,800&display=swap',
 ]
 
 const pg_backgrounds = {

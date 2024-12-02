@@ -42,10 +42,12 @@
     <article class="max-w-4xl mx-auto px-4 py-12">
       <div class="mb-8">
         <img
-          :alt="pgPost.featuredImage?.node?.alt || 'Post Image'"
+          :alt="
+            pgPost?._embedded?.['wp:featuredmedia']?.['0']?.alt || 'Post Image'
+          "
           class="w-full h-64 object-cover"
           :src="
-            pgPost.featuredImage?.node?.sourceUrl ||
+            pgPost?._embedded?.['wp:featuredmedia']?.['0']?.source_url ||
             'https://placehold.co/600x400'
           "
         />
@@ -53,25 +55,29 @@
       <div class="space-y-6">
         <div class="flex items-center gap-4 text-primary-600">
           <time datetime="2024-01-15"
-            >{{ new Date(pgPost.date).toDateString() }} </time
-          ><span>•</span><span>Tamil Cuisine</span>
+            >{{ new Date(pgPost.date).toDateString() }}
+          </time>
+          <span>•</span>
+          <span>Tamil Cuisine</span>
         </div>
         <h1 class="font-serif text-4xl md:text-5xl text-primary-800 mb-4">
-          {{ title }}
+          {{ pgPost.title.rendered }}
         </h1>
         <div
           class="p-10 dark:prose-invert dark:prose-gray-100 flex flex-col heading-offset max-w-none prose prose-gray-800 rounded-lg"
         >
-          <div v-html="pgPost.content" />
+          <div v-html="pgPost.content.rendered" />
         </div>
         <div class="flex flex-wrap gap-2 mt-8">
           <span
             class="px-3 py-1 bg-secondary-100 text-secondary-700 rounded-full"
             >#TamilCuisine</span
-          ><span
+          >
+          <span
             class="px-3 py-1 bg-secondary-100 text-secondary-700 rounded-full"
             >#TraditionalCooking</span
-          ><span
+          >
+          <span
             class="px-3 py-1 bg-secondary-100 text-secondary-700 rounded-full"
             >#CulinaryHeritage</span
           >

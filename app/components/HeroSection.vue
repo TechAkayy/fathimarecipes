@@ -24,9 +24,6 @@
   >
     <div class="absolute inset-0 bg-black/50" />
     <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8">
-      <p class="text-primary-200 font-serif text-xl md:text-2xl mb-4">
-        {{ heroCaption }}
-      </p>
       <h1
         class="text-white font-serif text-4xl md:text-6xl lg:text-7xl mb-6"
         pg-cms-site-name

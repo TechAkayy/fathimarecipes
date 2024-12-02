@@ -42,7 +42,7 @@
                 <dmcolor key="info" color="#0288d1" shade-DEFAULT="#5098d8" shade-950="#015b8c" shade-900="#02669d" shade-800="#0271ae" shade-700="#027cbf" shade-600="#0288d1" shade-500="#5098d8" shade-400="#76a9df" shade-300="#96bbe5" shade-200="#b4ccec" shade-100="#d0dff2" shade-50="#ebf1f9"/>
                 <dmcolor key="neutral" color="#1b1b1b" shade-50="#ebebeb" shade-100="#c4c4c4" shade-200="#9f9f9f" shade-300="#7b7b7b" shade-400="#585858" shade-500="#383838" shade-600="#1b1b1b" shade-700="#191919" shade-800="#171717" shade-900="#151515" shade-950="#131313" shade-DEFAULT="#101010"/>
             </dmdesignskill>
-            <dmdesignskill skill="fonts" family_1="Overlock" family_2="Ubuntu"></dmdesignskill>
+            <dmdesignskill skill="fonts" family_1="Sora" family_2="kalam" h3_2></dmdesignskill>
             <dmdesignskill skill="background" image_for_colors advanced="true" filter_blur="0" filter_brightness="100" filter_contrast="100" filter_grayscale="0" filter_hue-rotate="0" filter_invert="0" filter_opacity="100" filter_saturate="100" filter_sepia="0" image="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDIyfHxpbmRpYW4lMjBicmVha2Zhc3R8ZW58MHx8fHwxNzMyNzk4MDU1fDA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max" selector=".poster" keyword="indian breakfast"></dmdesignskill>
         </dmdesign>
     </dmdesigns>
