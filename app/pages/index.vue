@@ -1,8 +1,6 @@
 <script setup lang="ts">
   import { heroImageUrl } from '@/utils/hero'
 
-  import { usePgData } from '~~/data/pg-wordpress/pg-data.mjs'
-
   const heroCaption = 'Welcome To'
   const heroTitle = 'Vue Designer'
   const heroDescription =
@@ -19,7 +17,6 @@
     icon: 'i-mdi-home',
     // ogImage: 'images/ogImage.png', // url or local images inside public folder, for eg, ~/public/images/ogImage.png
   })
-  const pgData = await usePgData()
 </script>
 <template>
   <div>

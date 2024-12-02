@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { usePgData } from '~~/data/pg-wordpress/pg-data.mjs'
+  import { usePgData } from '~~/data/pg-wordpress/pg-data'
 
   const route = useRoute()
 
@@ -55,10 +55,8 @@
       <div class="space-y-6">
         <div class="flex items-center gap-4 text-primary-600">
           <time datetime="2024-01-15"
-            >{{ new Date(pgPost.date).toDateString() }}
-          </time>
-          <span>•</span>
-          <span>Tamil Cuisine</span>
+            >{{ new Date(pgPost.date).toDateString() }} </time
+          ><span>•</span><span>Tamil Cuisine</span>
         </div>
         <h1 class="font-serif text-4xl md:text-5xl text-primary-800 mb-4">
           {{ pgPost.title.rendered }}
@@ -72,12 +70,10 @@
           <span
             class="px-3 py-1 bg-secondary-100 text-secondary-700 rounded-full"
             >#TamilCuisine</span
-          >
-          <span
+          ><span
             class="px-3 py-1 bg-secondary-100 text-secondary-700 rounded-full"
             >#TraditionalCooking</span
-          >
-          <span
+          ><span
             class="px-3 py-1 bg-secondary-100 text-secondary-700 rounded-full"
             >#CulinaryHeritage</span
           >

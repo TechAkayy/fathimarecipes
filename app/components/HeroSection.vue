@@ -15,7 +15,7 @@
   // 	emit('addToCart', { item, quantity })
   // }
 
-  import { usePgData } from '~~/data/pg-wordpress/pg-data.mjs'
+  import { usePgData } from '~~/data/pg-wordpress/pg-data'
   const pgData = await usePgData()
 </script>
 <template>
