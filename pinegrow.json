@@ -1,0 +1,230 @@
+{
+  "files": {
+    "app/pages/index.vue": {
+      "frameworks": [
+        "pg.insight.events",
+        "@nuxt/image",
+        "pg.vue.tree.painter",
+        "@nuxt/icon",
+        "pg.css.grid",
+        "@vue/devtools",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "project",
+        "pg.project.items",
+        "pg.asset.manager",
+        "app_designer",
+        "@nuxt/devtools",
+        "vue",
+        "nuxt",
+        "@pinegrow/nuxt-module",
+        "@unocss/preset-icons",
+        "tw.flowbite",
+        "wordpress",
+        "tw",
+        "pg.html",
+        "pine.cone.lib"
+      ]
+    },
+    "app/layouts/default.vue": {
+      "frameworks": [
+        "@nuxt/image",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "@nuxt/icon",
+        "@vue/devtools",
+        "@nuxt/devtools",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "@pinegrow/nuxt-module",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "nuxt",
+        "app_designer",
+        "@unocss/preset-icons",
+        "project",
+        "vue",
+        "tw.flowbite",
+        "tw",
+        "pg.html",
+        "pine.cone.lib"
+      ]
+    },
+    "app/pages/recipes.vue": {
+      "frameworks": [
+        "@nuxt/image",
+        "pg.insight.events",
+        "@nuxt/icon",
+        "pg.vue.tree.painter",
+        "@vue/devtools",
+        "@nuxt/devtools",
+        "@pinegrow/nuxt-module",
+        "@unocss/preset-icons",
+        "nuxt",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "vue",
+        "pg.project.items",
+        "app_designer",
+        "project",
+        "pg.asset.manager",
+        "tw.flowbite",
+        "tw",
+        "pg.html",
+        "pine.cone.lib"
+      ]
+    },
+    "app/components/BlogPosts.vue": {
+      "frameworks": [
+        "@nuxt/image",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "@nuxt/icon",
+        "@vue/devtools",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "project",
+        "app_designer",
+        "@nuxt/devtools",
+        "vue",
+        "nuxt",
+        "@pinegrow/nuxt-module",
+        "@unocss/preset-icons",
+        "tw.flowbite",
+        "wordpress",
+        "tw",
+        "pg.html",
+        "pine.cone.lib"
+      ]
+    },
+    "app/pages/[slug].vue": {
+      "frameworks": [
+        "@nuxt/image",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "@nuxt/icon",
+        "@vue/devtools",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "@nuxt/devtools",
+        "project",
+        "app_designer",
+        "vue",
+        "@pinegrow/nuxt-module",
+        "@unocss/preset-icons",
+        "nuxt",
+        "tw.flowbite",
+        "wordpress",
+        "tw",
+        "pg.html",
+        "pine.cone.lib"
+      ]
+    },
+    "app-nuxt-tailwindcss-layer/components/nav/NavPrimary.vue": {
+      "frameworks": [
+        "@nuxt/image",
+        "@nuxt/icon",
+        "@vue/devtools",
+        "@nuxt/devtools",
+        "@unocss/preset-icons",
+        "@pinegrow/nuxt-module",
+        "nuxt",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw.flowbite",
+        "tw",
+        "pg.html",
+        "pine.cone.lib"
+      ]
+    },
+    "app/components/HeroSection.vue": {
+      "frameworks": [
+        "@nuxt/image",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "@nuxt/icon",
+        "@vue/devtools",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "project",
+        "pg.asset.manager",
+        "app_designer",
+        "@nuxt/devtools",
+        "vue",
+        "nuxt",
+        "@pinegrow/nuxt-module",
+        "@unocss/preset-icons",
+        "tw.flowbite",
+        "wordpress",
+        "tw",
+        "pg.html",
+        "pine.cone.lib"
+      ]
+    }
+  },
+  "template_framework_id": "vue",
+  "open-pages": ["app/components/HeroSection.vue"],
+  "ai-project-brief": "Fathima Recipes, a dedicated platform for authentic Tamil cuisine by Fathima Kaja. Warm and traditional design that embraces cultural heritage while maintaining modern usability. Features a rich color palette of maroon, gold, and forest green with an elegant typography combination of serif headings and sans-serif body text. Fully responsive design across all devices. IMPORTANT: All section background images will use creative means (dimmed background, text boxes, effects...) to ensure optimal text visibility and readability. Furthermore, the website's visual identity will exclusively use imagery related to Tamil cuisine and cooking, including authentic Tamil dishes, traditional cooking methods, spices, and ingredients, ensuring a cohesive and authentic brand experience that celebrates and preserves Tamil culinary traditions.\n\nUse custom color palette - primary, secondary and tertiary tailwind colors.",
+  "urls": {
+    "app/pages/index.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "app/layouts/default.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "app/pages/recipes.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "app/components/BlogPosts.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "app/pages/%5Bslug%5D.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "chrome-error://chromewebdata/": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "app-nuxt-tailwindcss-layer/components/nav/NavPrimary.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "app/components/HeroSection.vue": {
+      "open-page-views": [{ "w": 768, "h": 0 }]
+    }
+  },
+  "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
+  "frameworks": [
+    "@nuxt/image",
+    "pg.insight.events",
+    "pg.vue.tree.painter",
+    "@nuxt/icon",
+    "@vue/devtools",
+    "pg.css.grid",
+    "pg.image.overlay",
+    "pg.code-validator",
+    "pg.project.items",
+    "project",
+    "pg.asset.manager",
+    "app_designer",
+    "@nuxt/devtools",
+    "vue",
+    "nuxt",
+    "@pinegrow/nuxt-module",
+    "@unocss/preset-icons",
+    "tw.flowbite",
+    "wordpress",
+    "tw",
+    "pg.html",
+    "pine.cone.lib"
+  ],
+  "recent-classes": ["bg-design-image"]
+}
